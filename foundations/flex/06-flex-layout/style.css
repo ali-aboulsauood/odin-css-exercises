@@ -2,10 +2,68 @@
 
 body {
   height: 100vh;
+
   margin: 0;
+
   overflow: hidden;
+
   font-family: Roboto, sans-serif;
+
+  /* Solution */
+  display: flex;
+  flex-direction: column;
+
+  /* We can apply the following declaration to the `body` selector OR the declaration `flex-grow: 1` to the selector `.content`. */
+  /* justify-content: space-between; */
 }
+
+/* Solution */
+.header, .footer {
+  display: flex;
+  
+  justify-content: space-between;
+
+  padding: 24px 16px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+
+  flex-grow: 1;
+}
+
+ul {
+  display: flex;
+
+  gap: 16px;
+
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #666;
+
+  text-decoration: none;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+/* End of Solution */
 
 img {
   width: 600px;
@@ -13,14 +71,18 @@ img {
 
 button {
   font-family: Roboto, sans-serif;
+
   border: none;
   border-radius: 8px;
+
   background: #eee;
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
+
   padding: 8px 24px;
+
   width: 400px;
 }
